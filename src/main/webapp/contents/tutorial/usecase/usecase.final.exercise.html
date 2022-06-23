@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div>
+    <h2>[예제 시스템] 게시판</h2>
+    <hr>
+</div>
+<div>
+    <p>요구사항 : 글을 등록, 수정, 삭제할 수 있는 <b>게시판</b> (단, 관리자 모드는 개발하지 않는다.)</p>
+    <ul>
+        <li>글을 등록할 때에 파일을 첨부할 수 있다.</li>
+        <li>글을 조회하여 읽을 수 있다.</li>
+        <li>등록된 글은 글쓴이 혹은 날짜 별로 검색할 수 있다.</li>
+        <li>게시판의 모든 기능은 사용자 로그인 후에 사용할 수 있다.</li>
+    </ul>
+    <hr>
+    <br>
+    <div>
+        <p align="center" >
+        <ol>
+            <li>시스템 식별</li>
+                <p>
+                    요구사항을 확인해보면 통해 만들고자 하는 시스템은 '<b>게시판</b>'입니다.
+                    <br><img alt="Image" src="../images/system_final.png">
+                </p>
+                <br>
+            <li>액터 식별</li>
+                <p>
+                    ‘게시판’ 외부에서 상호작용하는 액터는 게시을 등록하고 삭제하는 등의 역할을 하는 ‘<b>사용자</b>’를 식별할 수 있습니다.
+                    <br><img alt="Image" src="../images/actor_final.png">
+                </p>
+                <br>
+            <li>유스케이스 식별</li>
+                <p>
+                    사용자인 액터가 게시판인 시스템에서 사용할 수 있는 기능이 유스케이스입니다. 요구사항을 확인해보면 사용자는 게시판을 통해 글을 <b>등록, 수정, 조회</b>하는 작업을 수행하므로 유스케이스를 식별할 수 있습니다.
+                    <br><img alt="Image" src="../images/usecase_final.png">
+                </p>
+                <br>
+            <li>관계 정의</li>
+                <p>
+                    액터와 유스케이스 사이의 관계인 연관 관계를 정의해보겠습니다.
+                    <br>사용자와 게시물 등록 사이는 연관 관계입니다.
+                    <br><img alt="Image" src="../images/association_final.PNG">
+                    <br>따라서 둘 사이의 관계를 실선으로 표시할 수 있습니다.
+                    <br>그렇다면 남은 유스케이스와 액터 사이의 관계를 표현해보세요.
+                    <br><img alt="Image" src="../images/diagram_final.PNG">
+                </p>
+        </ol>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

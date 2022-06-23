@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>메시지 유형</title>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+</head>
+<body>
+<div >
+    <h2>메시지의 유형</h2>
+    <hr>
+    <p>
+    <h3>메시지 유형</h3>
+    메시지는 <b>동기 메시지</b>, <b>비동기 메시지</b>, <b>자체 메시지</b>, <b>반환 메시지</b> 4개의 유형으로 나눌 수 있습니다.
+    <br><img class="img-fluid" alt="Image" src="/contents/tutorial/images/message_type.png" width="500" height="300">
+    <br>
+    </p>
+    <ul style="list-style-image: url('../images/check.png');">
+        <li>
+            <b>동기 메시지(Synchronous Message)</b><br>
+            메시지 전송 객체가 수신 객체의 오퍼레이션을 실행하게 하고, 오퍼레이션이 완료될 때까지 동기 메시지에 대한 <b>응답을 기다립니다.</b>
+            <br>프로그램 내 일반적인 함수 호출과 동일한 동작방식을 갖습니다.
+
+        </li>
+        <br>
+        <li>
+            <b>비동기 메시지(Asynchronous Message)</b><br>
+            메시지 전송 객체가 보내는 메시지로 수신 객체의 오퍼레이션을 실행하게 하는 것은 동일하지만, 오퍼레이션이 완료될 때까지 메시지 전송 객체가
+            <b>응답을 기다리지 않습니다.</b>
+            <br>즉, 응답을 요구하지 않는 메시지입니다. 메시지 전송 객체의 호출만을 표시합니다.
+            <br>보통 개별 스레드 간의 통신 및 새 스레드의 생성에 사용합니다.
+
+        </li>
+        <br>
+        <li>
+            <b>자체 메시지(Self Message)</b><br>
+            <b>자기 자신에게 보낸 메시지</b>입니다. 즉, 메시지 전송 객체와 수신 객체가 같습니다.
+            <br>결과로 생성된 실행 발생이 전송 실행 위에 나타납니다.
+
+        </li>
+        <br>
+        <li>
+            <b>반환 메시지(Reply/Return Message)</b><br>
+            이전 호출의 반환을 기다리는 메시지 전송 객체에게 <b>다시 반환되는 메시지</b>입니다.
+
+        </li>
+    </ul>
+    </p>
+    <br>
+
+</div>
+</body>
+</html>

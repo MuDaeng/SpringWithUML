@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "jsp-url.main",
+    "type": "java.lang.String",
+    "description": "A description for 'jsp-url.main'"
+  },
+  {
+    "name": "jsp-url.sign-in",
+    "type": "java.lang.String",
+    "description": "A description for 'jsp-url.sign-in'"
+  }
+]}

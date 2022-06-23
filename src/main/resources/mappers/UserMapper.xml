@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mudaeng.withuml.controller.UserDAO"><!--namespace를 통해 UserDAO와 연결합니다. -->
+  		
+  <select id="selectUsers" parameterType="com.mudaeng.withuml.model.UserDTO" resultType="com.mudaeng.withuml.model.UserDTO"><!--SELECT id, password from user-->
+  	SELECT * FROM user
+	<if test='id != null and id !=""'>
+  		WHERE id = #{id}
+  	</if>
+  </select>
+   <select id="insertUser" parameterType="com.mudaeng.withuml.model.UserDTO" resultType="com.mudaeng.withuml.model.UserDTO"><!--SELECT id, password from user-->
+  	INSERT INTO user values(
+	<if test='id != null and id !=""'>
+  		#{id},
+  	</if>
+  	#{password}, #{salt})
+  </select>
+</mapper>

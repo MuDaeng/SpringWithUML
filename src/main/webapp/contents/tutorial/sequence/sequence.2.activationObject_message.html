@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>시퀀스 구성요소</title>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+<body>
+<div >
+    <h2>시퀀스 다이어그램 구성요소</h2>
+    <p>
+        시퀀스 다이어그램의 구성요소는 크게 <b>활성객체</b>와 <b>메시지</b>로 나눌 수 있습니다.
+        <br>
+    </p>
+    <hr>
+    <p>
+    <h3>활성 객체</h3>
+    활성 객체는 시스템의 <b>행위자</b>이거나 시스템 내의 <b>유효한 객체</b>입니다.
+    <br>객체는 <b>생명선(Life-line)</b>을 가지고 있습니다. 생명선을 따라 작은 사각형이 나타나는데 이 부분을 <b>활성 박스(Activation Box)</b>라고 부릅니다.
+    <br><img class="img-fluid" alt="Image" src="/contents/tutorial/images/lifeline_activation.png" width="500" height="300">
+    <br>활성 박스는 객체가 수행하는 <b>오퍼레이션이 실행되고 있음</b>을 나타냅니다.
+    <br>활성 박스의 길이는 <b>오퍼레이션의 실행 소요 시간</b>을 나타냅니다.
+    <br>실행 소요 시간은 순서 만을 감안하여 대충 어림잡아 그려집니다.
+    <br>즉, 활성박스의 길이가 특정 시간 단위를 의미하지는 않습니다.
+
+    </p>
+    <br>
+    <p>
+    <h3>메시지</h3>
+    메시지는 객체 간 <b>상호작용</b> 혹은 <b>의사소통 통신을 정의</b>하는 요소입니다.
+    <br>한 객체에서 다른 객체로 전송되는 메시지는 <b>한 객체의 생명선에서 다른 객체의 생명선으로 이동</b>하는 것을 의미합니다.
+    <br>메시지 전송 객체로부터 수신 객체로 보내는 메시지는 <b>수신 객체의 오퍼레이션</b>을 실행합니다.
+    <br><img alt="Image" src="../images/message.png" width="500" height="300">
+
+    </p>
+
+</div>
+</body>
+</html>

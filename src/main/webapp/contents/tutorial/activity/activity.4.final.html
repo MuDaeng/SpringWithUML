@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+<body>
+
+<h2>종료 상태</h2>
+<hr>
+<p>
+<h3>종료 상태</h3>
+<p>
+<br>처리흐름이 종료되는 곳을 의미합니다.
+
+</p>
+<p>
+    종료 상태는 분류를 하면  <b>Flow Final Node </b>과 <b>Activity Final Node</b>으로 나눕니다.
+</p>
+<ol>
+    <li><b>Flow Final Node </b>
+        <ul>
+            <li> 액티비티 전체 중에서, 결정 노드로 나뉘는 곳 등에 있어서 한 플로우 종료를 의미합니다.</li>>
+            <li>도착한 모든 토큰은 파괴하지만 activity의 다른 흐름에는 영향을 미치지 않는다.</li>
+        </ul>
+        <br><img alt="Image" src="../images\activity1.3.1.png" >
+    </li>
+    <br>
+    <li><b>Activity Final Node</b>은 액티비티 내 모든 프로세스 종료를 의미한다.
+        <ul>
+            <li>Activity 마지막 노드에 도달하는 토큰은 활동을 종료한다.</li>
+            <li>특히 활동의 모든 실행 조치를 중지하고 출력 활동 매개 변수 노드를 제외하고, 오브젝트 노드의 모든 토큰을 파괴합니다.</li>
+            <li>동기적 호출 조치의 실행을 종료하면 복귀를 기다리는 모든 작동을 종료한다.</li>
+            <li>비동기적으로 호출된 모든 활동들은 영향을 받지 않는다.</li>
+        </ul>
+        <br><img alt="Image" src="../images\activity1.3.png" >
+    </li>
+</ol>
+</body>
+</html>
